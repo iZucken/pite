@@ -1,0 +1,33 @@
+(* Pico templating EBNF schema *)
+
+no_scope = space, statement, space
+
+statement = ( variable | block | omit ) space? statement?
+statement-variable = statement | variable
+
+block = block-open space? block-universal space? block-close
+block-open = '('
+block-close = ')'
+
+omit = omit-open space? block-universal space? omit-close
+omit-open = '{'
+omit-close = '}'
+
+block-universal = statement (space? list-join-input)? (space? default-input)?
+
+default-input = default space? input
+default = default-of-block | default-if-single
+default-if-single = '?-'
+default-of-block = '?'
+
+list-join-input = list-join space? input
+list-join = list-join-multiple | list-join-any
+list-join-multiple = '?~'
+list-join-any = '~'
+
+variable = input (space? property space? variable)?
+property = "."
+input = ( word | glyph ) space? input?
+space = #'\s*'
+word = #'[A-Za-z0-9_+]+'
+glyph = #'.'

@@ -1,0 +1,23 @@
+{
+    "name": "izu/pico-templates",
+    "description": "Minimalistic string templating",
+    "type": "library",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "iZucken",
+            "email": "izucken@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "izu\\": "src/"
+        }
+    },
+    "require": {
+        "nette/tokenizer": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    }
+}

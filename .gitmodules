@@ -1,0 +1,3 @@
+[submodule "src/loco"]
+	path = src/loco
+	url = https://github.com/iZucken/loco.git
