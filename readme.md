@@ -1,3 +1,8 @@
-lookat: https://github.com/qntm/loco
-lookat: https://github.com/Weltraumschaf/ebnf
-lookat: https://mdkrajnak.github.io/ebnftest/
+
+qntm.loco: https://github.com/qntm/loco
+
+Weltraumschaf.ebnf: https://github.com/Weltraumschaf/ebnf
+
+mdkrajnak.ebnftest: https://mdkrajnak.github.io/ebnftest/
+
+antlr: https://www.antlr.org/

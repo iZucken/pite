@@ -15,6 +15,7 @@
         }
     },
     "require": {
+        "php": "^7.4",
         "nette/tokenizer": "^3.1"
     },
     "require-dev": {
